@@ -1,18 +1,22 @@
 import project1 from './images/place-holder-img.jpg'
+import foodieFinds from './images/Foodie-finds.png'
+import wrapify from './images/wrapify.png'
 const projectList = [
     {
         id: 1,
-        image: project1,
-        title: "Place-holder1",
-        link: "https://www.github.com/BeaBravo",
-        techUsed: "React"
+        image: wrapify,
+        title: "Wrapify",
+        deployed: 'https://beabravo.github.io/wrapify/',
+        link: "https://github.com/BeaBravo/wrapify",
+        techUsed: "HTML5, CSS, JavaScript"
     },
     {
         id: 2,
-        image: project1,
-        title: "Place-holder2",
-        link: "github.com/BeaBravo",
-        techUsed: "React"
+        image: foodieFinds,
+        title: "Foodie Finds",
+        deployed: 'https://restaurant-blog-3f12d3a2bc88.herokuapp.com/',
+        link: "https://github.com/nicholascatalano/foodie-finds-app",
+        techUsed: "HTML5, CSS, JavaScript, MySQL databate, and sequelize"
     },
     {
         id: 3,

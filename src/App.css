@@ -131,9 +131,18 @@
 
   .project {
     border: solid 5px var(--border-color);
+    position: relative;
+    padding: 0%;
   }
 
-  
+.project::before {
+    background-color: rgba(255, 255, 255, 0.677);
+    content:normal;
+    display: block;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+  } 
   /* Footer styles. it is the same colour as the header and always at the bottom of the page */
   
   footer {
