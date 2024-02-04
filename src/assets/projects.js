@@ -4,7 +4,7 @@ const projectList = [
         id: 1,
         image: project1,
         title: "Place-holder1",
-        link: "github.com/BeaBravo",
+        link: "https://www.github.com/BeaBravo",
         techUse: "React"
     },
     {
@@ -17,14 +17,14 @@ const projectList = [
     {
         id: 3,
         image: project1,
-        title: "Place-holder2",
+        title: "Place-holder3",
         link: "github.com/BeaBravo",
         techUse: "React"
     },
     {
         id: 4,
         image: project1,
-        title: "Place-holder2",
+        title: "Place-holder4",
         link: "github.com/BeaBravo",
         techUse: "React"
     },
