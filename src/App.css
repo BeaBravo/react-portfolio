@@ -131,7 +131,7 @@
 
   
   .project {
-    border: solid 5px blue;
+    border: solid 5px var(--border-color);
   }
 
   #contact .text-section {
@@ -150,7 +150,7 @@
   footer {
     text-align: center;
     margin-top: auto;
-    font-weight: lighter;
+    font-size:xx-large;
   }
   
   /* Styles for bigger screens: */
