@@ -128,58 +128,12 @@
   
   /* portfolio section styles */
   
-  #portfolio {
-    display: flex;
-    flex-direction: column;
-  }
+
   
-  .projects,
-  .other-projects {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    border: solid 2px white;
+  .project {
+    border: solid 5px blue;
   }
-  
-  /* This will make the first project appear bigger compared to the other ones */
-  #first-project {
-    max-width: 100%;
-    flex: 1 1 100%;
-    position: relative;
-  }
-  #project2,
-  #project3,
-  #project4,
-  #project5 {
-    max-width: 50%;
-    flex: 1 1 50%;
-  }
-  
-  .project-box {
-    border: 5px solid var(--border-color);
-    position: relative;
-    margin: 0.5rem;
-  }
-  
-  .project-box img {
-    opacity: 0.85;
-  }
-  
-  .project-box figcaption {
-    position: absolute;
-    background-color: var(--border-color);
-    bottom: 0;
-    line-height: 1.25em;
-    font-size: small;
-    color: var(--background-color);
-  }
-  
-  .project-box figcaption h6 {
-    color: var(--background-color);
-    font: bolder;
-    margin: 0;
-  }
-  
+
   #contact .text-section {
     display: flex;
     justify-content: space-evenly;
@@ -189,16 +143,6 @@
     text-decoration: none;
     color: var(--text-color);
     font-weight: lighter;
-  }
-  
-  /* when the user hovers any of the projects a box appears around the project and the image opacity changes from 0.5 to 1 */
-  .project-box:hover {
-    cursor: pointer;
-    border: 10px solid var(--border-color);
-  }
-  
-  .project-box:hover img {
-    opacity: 1;
   }
   
   /* Footer styles. it is the same colour as the header and always at the bottom of the page */
@@ -249,26 +193,6 @@
       width: 100%;
     }
   
-    #portfolio {
-      flex-direction: row;
-      align-items: center;
-    }
-  
-    .projects div {
-      margin-top: 2%;
-      margin-bottom: 2%;
-    }
-    .projects figcaption {
-      font-size: revert;
-      /* bottom: 25%;
-      padding: 1%; */
-    }
-    .projects,
-    .text-section {
-      max-width: 80%;
-      border-left: 7px solid var(--border-color);
-      padding-left: 5%;
-    }
   }
   
   @media screen and (min-width: 1022px) {
