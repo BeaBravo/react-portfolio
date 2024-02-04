@@ -29,7 +29,7 @@ Navigate through the website hovering over the nav and projects. See demo below
 
 The following demo shows how to navigate through the site
 
-[![Gif of the application](./assets/ScreenRecording.gif)]
+![Gif of the application](./assets/ScreenRecording.gif)
 
 
 ## Credits
