@@ -1,8 +1,9 @@
 import projectList from "../assets/projects";
 import Project from '../components/Project'
 
+
 function Portfolio() {
-    // const [hover, setHover] = useState(true)
+
     return (
         <div id='portfolio'>
             <h1>Portfolio</h1>
