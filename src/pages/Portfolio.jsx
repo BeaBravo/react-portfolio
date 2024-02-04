@@ -8,7 +8,7 @@ function Portfolio() {
         <div id='portfolio'>
             <h1>Portfolio</h1>
             <section className="projects row justify-content-evenly">
-                {projectList.map((project) => <Project {...project} />)}
+                {projectList.map((project) => <Project key={project.id} {...project} />)}
             </section>
         </div>
     );
