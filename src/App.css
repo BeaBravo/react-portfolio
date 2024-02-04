@@ -126,9 +126,9 @@
     text-align: justify;
   }
   
-  /* Work section styles */
+  /* portfolio section styles */
   
-  #work {
+  #portfolio {
     display: flex;
     flex-direction: column;
   }
@@ -138,6 +138,7 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    border: solid 2px white;
   }
   
   /* This will make the first project appear bigger compared to the other ones */
@@ -248,7 +249,7 @@
       width: 100%;
     }
   
-    #work {
+    #portfolio {
       flex-direction: row;
       align-items: center;
     }
