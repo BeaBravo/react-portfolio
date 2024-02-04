@@ -3,21 +3,33 @@ import { Link, useLocation } from 'react-router-dom'
 function Header() {
     //will have nav and title
 
-    // const currentPage = useLocation().pathname;
+    const currentPage = useLocation().pathname;
 
     return (<header><h1>Beatriz Bravo</h1>
         <ul className='nav'>
             <li className='nav-item'>
-                About Me
+                <Link
+                    to='/'>
+                    About Me
+                </Link>
             </li>
             <li className='nav-item'>
-                Portfolio
+                <Link
+                    to='/Portfolio'>
+                    Portfolio
+                </Link>
             </li>
             <li className='nav-item'>
-                Contact Me
+                <Link
+                    to='/Contact'>
+                    Contact Me
+                </Link>
             </li>
             <li className='nav-item'>
-                Resume
+                <Link
+                    to='/Resume'>
+                    Resume
+                </Link>
             </li>
         </ul>
     </header>
