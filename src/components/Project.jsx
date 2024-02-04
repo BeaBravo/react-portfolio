@@ -4,7 +4,7 @@
 import { useState } from 'react';
 import { BsGithub } from "react-icons/bs";
 import { Link } from 'react-router-dom';
-function Project({ functionality, title, link, techUsed, image }) {
+function Project({ title, link, techUsed, image }) {
     const [hover, setHover] = useState(false);
     const [hoverTitle, setHoverTitle] = useState(false);
     const [hoverIcon, setHoverIcon] = useState(false);
