@@ -8,7 +8,6 @@ export default function Footer() {
         >
             <BsGithub />
         </Link>
-        <t />
         <Link
             to='https://www.linkedin.com/in/beatriz-bravo/'
         >
