@@ -1,0 +1,286 @@
+/* Default styles are for mobile screens, bigger screens are styled at the bottom of this file  */
+
+/* Root styles including color pallets are here */
+:root {
+    --background-color: #9a275a;
+    --text-color: #e2c6c2;
+    --border-color: #cb958e;
+    --selection-color: #e2bfba;
+  }
+  
+  ::selection {
+    background-color: var(--selection-color);
+    color: var(--background-color);
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  html {
+    font-size: 62.5%;
+  }
+  
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial,
+      sans-serif;
+    font-size: 1.75rem;
+    line-height: 1.5;
+    color: var(--text-color);
+    background: var(--background-color);
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    padding: 0.5rem;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-bottom: 0.625rem;
+    margin-left: 0.5rem;
+    color: var(--text-color);
+    font-weight: 250;
+    line-height: 1.1;
+  }
+  
+  h1 {
+    font-size: 4rem;
+    margin-bottom: 0.25rem;
+  }
+  
+  h2 {
+    font-size: 3.5rem;
+  }
+  
+  h3 {
+    font-size: 3rem;
+  }
+  
+  h4 {
+    font-size: 2.5rem;
+  }
+  
+  h5 {
+    font-size: 2rem;
+  }
+  
+  h6 {
+    font-size: 1.5rem;
+  }
+  
+  p {
+    font-weight: 150;
+  }
+  
+  /* Header Styles */
+  
+  header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 1%;
+  }
+  
+  .nav {
+    display: flex;
+    min-width: 450px;
+    width: 100%;
+    justify-content: space-evenly;
+    list-style-type: none;
+  }
+  
+  .nav-item {
+    text-decoration: none;
+    font-weight: bolder;
+    color: var(--text-color);
+  }
+
+  .nav-item a {
+    text-decoration: none;
+    color: var(--text-color);
+    ;
+  }
+  
+  /* Font color changes when user hovers over any of the nav elements */
+  .nav-item a:hover {
+    color: #806666;
+  }
+  
+  /* Main Styles */
+  
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* about me styles */
+  
+  #about-me {
+    text-align: justify;
+  }
+  
+  /* Work section styles */
+  
+  #work {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .projects,
+  .other-projects {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  
+  /* This will make the first project appear bigger compared to the other ones */
+  #first-project {
+    max-width: 100%;
+    flex: 1 1 100%;
+    position: relative;
+  }
+  #project2,
+  #project3,
+  #project4,
+  #project5 {
+    max-width: 50%;
+    flex: 1 1 50%;
+  }
+  
+  .project-box {
+    border: 5px solid var(--border-color);
+    position: relative;
+    margin: 0.5rem;
+  }
+  
+  .project-box img {
+    opacity: 0.85;
+  }
+  
+  .project-box figcaption {
+    position: absolute;
+    background-color: var(--border-color);
+    bottom: 0;
+    line-height: 1.25em;
+    font-size: small;
+    color: var(--background-color);
+  }
+  
+  .project-box figcaption h6 {
+    color: var(--background-color);
+    font: bolder;
+    margin: 0;
+  }
+  
+  #contact .text-section {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  #contact .text-section a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: lighter;
+  }
+  
+  /* when the user hovers any of the projects a box appears around the project and the image opacity changes from 0.5 to 1 */
+  .project-box:hover {
+    cursor: pointer;
+    border: 10px solid var(--border-color);
+  }
+  
+  .project-box:hover img {
+    opacity: 1;
+  }
+  
+  /* Footer styles. it is the same colour as the header and always at the bottom of the page */
+  
+  footer {
+    text-align: center;
+    margin-top: auto;
+    font-weight: lighter;
+  }
+  
+  /* Styles for bigger screens: */
+  
+  @media screen and (min-width: 768px) {
+    h2 {
+      width: 20%;
+      text-align: right;
+      padding-right: 2%;
+    }
+  
+    header {
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    .nav {
+      width: auto;
+    }
+  
+    main {
+      padding: 0 10%;
+    }
+  
+    main section {
+      margin-top: 5%;
+      margin-bottom: 5%;
+    }
+  
+    #about-me,
+    #contact {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+    }
+  
+    .text-section {
+      flex-grow: 1;
+      width: 100%;
+    }
+  
+    #work {
+      flex-direction: row;
+      align-items: center;
+    }
+  
+    .projects div {
+      margin-top: 2%;
+      margin-bottom: 2%;
+    }
+    .projects figcaption {
+      font-size: revert;
+      /* bottom: 25%;
+      padding: 1%; */
+    }
+    .projects,
+    .text-section {
+      max-width: 80%;
+      border-left: 7px solid var(--border-color);
+      padding-left: 5%;
+    }
+  }
+  
+  @media screen and (min-width: 1022px) {
+    /* for screens 1022px and larger the projects won't take 100% of the section  */
+  
+    #first-project {
+      flex: 1 1 80%;
+    }
+  
+    #project2,
+    #project3,
+    #project4,
+    #project5 {
+      flex: 1 1 40%;
+    }
+  }
+  

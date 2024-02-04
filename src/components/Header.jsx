@@ -9,7 +9,8 @@ function Header() {
         <ul className='nav'>
             <li className='nav-item'>
                 <Link
-                    to='/'>
+                    to='/'
+                    >
                     About Me
                 </Link>
             </li>
