@@ -129,21 +129,10 @@
   /* portfolio section styles */
   
 
-  
   .project {
     border: solid 5px var(--border-color);
   }
 
-  #contact .text-section {
-    display: flex;
-    justify-content: space-evenly;
-  }
-  
-  #contact .text-section a {
-    text-decoration: none;
-    color: var(--text-color);
-    font-weight: lighter;
-  }
   
   /* Footer styles. it is the same colour as the header and always at the bottom of the page */
   
@@ -180,33 +169,18 @@
       margin-bottom: 5%;
     }
   
-    #about-me,
-    #contact {
+    #about-me {
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: flex-start;
     }
   
-    .text-section {
-      flex-grow: 1;
-      width: 100%;
-    }
   
   }
   
   @media screen and (min-width: 1022px) {
     /* for screens 1022px and larger the projects won't take 100% of the section  */
   
-    #first-project {
-      flex: 1 1 80%;
-    }
-  
-    #project2,
-    #project3,
-    #project4,
-    #project5 {
-      flex: 1 1 40%;
-    }
   }
   
