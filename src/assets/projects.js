@@ -6,11 +6,12 @@ import freshFinder from './images/Fresh-finder.png'
 const projectList = [
     {
         id: 1,
-        image: wrapify,
-        title: "Wrapify",
-        deployed: 'https://beabravo.github.io/wrapify/',
-        link: "https://github.com/BeaBravo/wrapify",
-        techUsed: "HTML5, CSS, JavaScript"
+        image: freshFinder,
+        title: "Fresh Finder",
+        deployed: 'https://market-place-app.onrender.com/',
+        link: "https://github.com/YuliyaTsoy/food-marketplace-app",
+        techUsed: "React, HTML5, CCS, Tailwind CSS, Express, Node.js, GraphQL, Apollo, MongoDB",
+        description: 'User-friendly e-commerce site where the user can find or list products they would like to buy/sell'
     },
     {
         id: 2,
@@ -18,16 +19,19 @@ const projectList = [
         title: "Foodie Finds",
         deployed: 'https://restaurant-blog-3f12d3a2bc88.herokuapp.com/',
         link: "https://github.com/nicholascatalano/foodie-finds-app",
-        techUsed: "HTML5, CSS, JavaScript, MySQL, and sequelize"
+        techUsed: "HTML5, CSS, JavaScript, MySQL, and sequelize",
+        description: 'Search a database of reviewed restaurants, based on a specific location, type of food, and/or type of restaurant. The user is able to create an account and add their own review'
     },
     {
         id: 3,
-        image: freshFinder,
-        title: "Fresh Finder",
-        deployed: 'https://market-place-app.onrender.com/',
-        link: "https://github.com/YuliyaTsoy/food-marketplace-app",
-        techUsed: "React, HTML5, CCS, Tailwind CSS, Express, Node.js, GraphQL, Apollo, MongoDB"
+        image: wrapify,
+        title: "Wrapify",
+        deployed: 'https://beabravo.github.io/wrapify/',
+        link: "https://github.com/BeaBravo/wrapify",
+        techUsed: "HTML5, CSS, JavaScript",
+        description: 'Find products based on specific search criteria. Designed to interact with external API’s to search and view Amazon products and perform sentiment analysis on each product.'
     },
+
     {
         id: 4,
         image: project1,

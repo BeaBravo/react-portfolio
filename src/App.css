@@ -135,6 +135,10 @@
     padding: 0%;
   }
 
+  .project span p {
+    font-size: smaller;
+  }
+
 .project::before {
     background-color: rgba(255, 255, 255, 0.677);
     content:normal;
@@ -184,12 +188,18 @@
       align-items: center;
       justify-content: flex-start;
     }
+
+
   
   
   }
   
   @media screen and (min-width: 1022px) {
     /* for screens 1022px and larger the projects won't take 100% of the section  */
+        /* for the project font size */
+        .project span p {
+          font-size: normal;
+        }
   
   }
   

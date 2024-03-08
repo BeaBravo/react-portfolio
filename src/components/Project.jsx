@@ -4,7 +4,7 @@
 import { useState } from 'react';
 import { BsGithub } from "react-icons/bs";
 import { Link } from 'react-router-dom';
-function Project({ id, title, deployed, link, techUsed, image }) {
+function Project({ id, title, deployed, link, techUsed, image, description }) {
     const [hover, setHover] = useState(false);
     const [hoverTitle, setHoverTitle] = useState(false);
     const [hoverIcon, setHoverIcon] = useState(false);
@@ -13,7 +13,7 @@ function Project({ id, title, deployed, link, techUsed, image }) {
             onMouseEnter={() => setHover(true)}
             onMouseLeave={() => setHover(false)}
             style={{ backgroundColor: 'white' }} >
-            <img src={image} style={hover ? { position: 'relative', top: 0, bottom: 0, width: '100%', height: '100%', zIndex: -0.5, opacity: '0.2' } :
+            <img src={image} style={hover ? { position: 'relative', top: 0, bottom: 0, width: '100%', height: '100%', zIndex: -0.5, opacity: '0.1' } :
                 { position: 'relative', top: 0, bottom: 0, width: '100%', height: '100%', zIndex: -0.5 }} />
             <span style={hover ? { position: 'absolute', top: '30px', left: '30px' } : { display: 'none' }}>
                 <Link
@@ -36,7 +36,10 @@ function Project({ id, title, deployed, link, techUsed, image }) {
                         onMouseLeave={() => setHoverIcon(false)} />
                 </Link>
                 <p className='my-4'
-                    style={{ color: "#9a275a", fontWeight: "normal" }}>{techUsed}</p>
+                    style={{ color: "#9a275a", fontWeight: "normal" }}>{description}</p>
+                <p className='my-4'
+                    style={{ color: "#9a275a", fontWeight: "normal"}}>{techUsed}</p>
+
 
             </span>
         </div>
