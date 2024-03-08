@@ -1,12 +1,14 @@
-import { Link } from "react-router-dom";
+import ResumePDF from '../assets/BeatrizBravoResume.pdf'
 export default function Resume() {
     return (
         <div>
             <h1>Resume</h1>
 
-            <h5 style={{ marginTop: '3rem' }}>Download my <Link
-                to='https://www.github.com/BeaBravo'
-                style={{ textDecoration: 'none', color: '#cb958e' }}>resume</Link></h5>
+
+            <h5 style={{ marginTop: '3rem' }}>Download my <a
+                href={ResumePDF}
+                target="_blank"
+                style={{ textDecoration: 'none', color: '#cb958e' }}>resume</a></h5>
 
             <h3 style={{ fontWeight: 'bolder', marginTop: '3rem' }}>Front-End Skills</h3>
             <ul>
