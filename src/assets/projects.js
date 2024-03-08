@@ -1,6 +1,8 @@
 import project1 from './images/place-holder-img.jpg'
 import foodieFinds from './images/Foodie-finds.png'
 import wrapify from './images/wrapify.png'
+import freshFinder from './images/Fresh-finder.png'
+
 const projectList = [
     {
         id: 1,
@@ -16,14 +18,15 @@ const projectList = [
         title: "Foodie Finds",
         deployed: 'https://restaurant-blog-3f12d3a2bc88.herokuapp.com/',
         link: "https://github.com/nicholascatalano/foodie-finds-app",
-        techUsed: "HTML5, CSS, JavaScript, MySQL databate, and sequelize"
+        techUsed: "HTML5, CSS, JavaScript, MySQL, and sequelize"
     },
     {
         id: 3,
-        image: project1,
-        title: "Place-holder3",
-        link: "github.com/BeaBravo",
-        techUsed: "React"
+        image: freshFinder,
+        title: "Fresh Finder",
+        deployed: 'https://market-place-app.onrender.com/',
+        link: "https://github.com/YuliyaTsoy/food-marketplace-app",
+        techUsed: "React, HTML5, CCS, Tailwind CSS, Express, Node.js, GraphQL, Apollo, MongoDB"
     },
     {
         id: 4,
