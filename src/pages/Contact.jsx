@@ -2,9 +2,18 @@ import { useState } from "react";
 export default function Contact() {
     // Here we set two state variables for firstName and lastName using `useState`
     const [errorMessage, setErrorMessage] = useState('')
+    const [formState, setFormState] = useState({ name: '', email: '', message: '' })
+
+    const handleName = (e) => {
+        setFormState({
+            ...formState, name: e.target.value
+        })
+    }
 
     const handleEmail = (e) => {
         const { name, value } = e.target
+        // set the form state email
+        setFormState({ ...formState, email: e.target.value })
         //check value of the email with regex 
         const regex = new RegExp("^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$")
         //if not valid, it will display an error message
@@ -15,6 +24,8 @@ export default function Contact() {
 
     const handleMessage = (e) => {
         const { name, value } = e.target
+        // set the form state message
+        setFormState({ ...formState, message: e.target.value })
         //if message is empty, it will display an error message
         value === '' ? setErrorMessage('message cannot be empty') : setErrorMessage('')
     }
@@ -22,6 +33,8 @@ export default function Contact() {
     const handleFormSubmit = (e) => {
         // Preventing the default behavior of the form submit (which is to refresh the page)
         e.preventDefault();
+        console.log('submitted form')
+        console.log(formState)
     };
 
     return (
@@ -36,6 +49,7 @@ export default function Contact() {
                         className="col-md-7 col-11 mx-2"
                         name="name"
                         type="text"
+                        onChange={handleName}
                         placeholder="your name here"
                     />
                 </div>
