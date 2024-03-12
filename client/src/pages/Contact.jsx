@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { sendEmail } from "../utils/API";
+import emailjs from 'emailjs-com'
 export default function Contact() {
     // Here we set two state variables for firstName and lastName using `useState`
     const [errorMessage, setErrorMessage] = useState('')
@@ -38,8 +39,9 @@ export default function Contact() {
         e.preventDefault();
         console.log('submitted form')
         console.log(formState)
-        const response = await sendEmail(formState);
-        console.log(response.status)
+        // const response = await sendEmail(formState);
+        const response = await emailjs.send('service_lp3hjml', 'template_vov4hdw', formState, 'zQR0ZtteWD7GqU93U')
+        console.log(response)
         if (response.status === 200) {
             setMessageSent(true);
             setResponse('email sent successfully, thank you!')
