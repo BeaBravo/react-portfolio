@@ -3,6 +3,7 @@ const router = require('express').Router();
 router.route('/api/contact').post((req, res) => {
     try {
         const { name, email, message } = req.body;
+        console.log(`wants to send '${message}' to ${name}`)
         return res.status(200).json(`wants to send '${message}' to ${name}`)
     }
     catch (err) {

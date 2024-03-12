@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { sendEmail } from "../utils/API";
 export default function Contact() {
     // Here we set two state variables for firstName and lastName using `useState`
     const [errorMessage, setErrorMessage] = useState('')
@@ -35,6 +36,7 @@ export default function Contact() {
         e.preventDefault();
         console.log('submitted form')
         console.log(formState)
+        const response = sendEmail(formState);
     };
 
     return (
