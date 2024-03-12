@@ -5,6 +5,7 @@ export default function Contact() {
     const [errorMessage, setErrorMessage] = useState('')
     const [formState, setFormState] = useState({ name: '', email: '', message: '' })
     const [messageSent, setMessageSent] = useState(false)
+    const [responseMessage, setResponse] = useState('');
 
     const handleName = (e) => {
         setFormState({
@@ -32,13 +33,18 @@ export default function Contact() {
         value === '' ? setErrorMessage('message cannot be empty') : setErrorMessage('')
     }
 
-    const handleFormSubmit = (e) => {
+    const handleFormSubmit = async (e) => {
         // Preventing the default behavior of the form submit (which is to refresh the page)
         e.preventDefault();
         console.log('submitted form')
         console.log(formState)
-        const response = sendEmail(formState);
-        setMessageSent(true);
+        const response = await sendEmail(formState);
+        console.log(response.status)
+        if (response.status === 200) {
+            setMessageSent(true);
+            setResponse('email sent successfully, thank you!')
+
+        }
     };
 
     return (
@@ -46,7 +52,7 @@ export default function Contact() {
             <h1>
                 Contact Me
             </h1>
-            {messageSent ? <h3>Message successfully sent, thanks!</h3> :
+            {messageSent ? <h3>{responseMessage}</h3> :
                 <form className="form" onSubmit={handleFormSubmit}>
                     <div className="form-group my-4 row">
                         <label >Name:</label>
