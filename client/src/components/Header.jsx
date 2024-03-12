@@ -5,12 +5,18 @@ function Header() {
 
     const currentPage = useLocation().pathname;
 
-    return (<header><h1>Beatriz Bravo</h1>
+    return (<header><h1 className='nav-item' style={
+        { fontWeight: 'lighter' }
+    }><Link
+        to='/'
+
+    >Beatriz Bravo
+        </Link></h1>
         <ul className='nav'>
             <li className='nav-item'>
                 <Link
                     to='/'
-                    >
+                >
                     About Me
                 </Link>
             </li>
