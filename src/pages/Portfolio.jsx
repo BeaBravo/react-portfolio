@@ -7,10 +7,17 @@ function Portfolio() {
     const [filteredProjects, setFilteredProjects] = useState(projectList);
     const [isChecked, setCheckbox] = useState(false)
 
+    //get all tech used and remove duplicates
+    const allTech = projectList.map((project) => project.techUsed.split(', '))
+    let allTechArray = [];
+    allTech.map((array1) => allTechArray.push(...array1))
+    allTechArray = allTechArray.filter((item, index) => allTechArray.indexOf(item) === index);
+    console.log(allTechArray);
+
     // handle filters 
     const handleFilter = (event) => {
-        const value = event.target.value;
-        const filtered = projectList.filter(project => project.techUsed.includes('React'));
+        const name = event.target.name;
+        const filtered = projectList.filter(project => project.techUsed.includes(name));
         !isChecked ? setFilteredProjects(filtered) : setFilteredProjects(projectList);
     }
     return (
