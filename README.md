@@ -2,11 +2,11 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-## Description 
+## Description
 
-This site was created to have a personal portfolio where colleagues and potential employers can see what I've been working on. This portfolio was created using React.js 
+This site was created to have a personal portfolio where colleagues and potential employers can see what I've been working on. This portfolio was created using React.js
 
-Link to deployed site: https://tangerine-cannoli-75acef.netlify.app/
+Link to deployed site: https://beatrizbravo.ca/ 
 
 ## Table of Contents
 
@@ -23,14 +23,13 @@ N/A
 
 ## Usage
 
-Navigate through the website hovering over the nav and projects. See demo below 
+Navigate through the website hovering over the nav and projects. See demo below
 
 ## Demo
 
 The following demo shows how to navigate through the site
 
 ![Gif of the application](./assets/ScreenRecording.gif)
-
 
 ## Credits
 
