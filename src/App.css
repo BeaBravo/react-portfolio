@@ -153,6 +153,7 @@ main {
   padding: 1rem;
   border-radius: 15px;
   color: var(--background-color);
+  opacity: 0.9;
 }
 
 #filter-projects div h5 {
@@ -174,6 +175,7 @@ main {
 
 .filter-checkbox-container input {
   margin-right: 0.5rem;
+  cursor: pointer;
 }
 
 /* Footer styles. it is the same colour as the header and always at the bottom of the page */

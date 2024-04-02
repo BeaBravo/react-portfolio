@@ -10,7 +10,7 @@ const projectList = [
         title: "Fresh Finder",
         deployed: 'https://market-place-app.onrender.com/',
         link: "https://github.com/YuliyaTsoy/food-marketplace-app",
-        techUsed: "React, HTML5, CCS, Tailwind CSS, Express.js, Node.js, GraphQL, Apollo, MongoDB",
+        techUsed: "React, HTML5, CSS, Tailwind CSS, Express.js, Node.js, GraphQL, Apollo, MongoDB",
         description: 'User-friendly e-commerce site where the user can find or list products they would like to buy/sell'
     },
     {
