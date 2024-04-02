@@ -1,11 +1,11 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import projectList from "../assets/projects";
 import Project from '../components/Project';
 import TechCheckbox from "../components/techCheckbox";
 
 
 function Portfolio() {
-    const [filteredProjects, setFilteredProjects] = useState(projectList);
+    const [projectsToRender, setProjectsToRender] = useState(projectList);
     const [isChecked, setCheckbox] = useState(false)
     const [filterName, setFilterName] = useState([])
 
@@ -19,7 +19,7 @@ function Portfolio() {
     // handle filters 
     const handleFilter = (event) => {
         const name = event.target.name;
-        console.log('box is checked', event.target.checked)
+        // console.log('box is checked', event.target.checked)
         // if the checkbox has been checked, it will add the tech to the array, if it has been unchecked - it will delete it 
         if (event.target.checked) {
             setFilterName([...filterName, name])
@@ -29,9 +29,18 @@ function Portfolio() {
             setFilterName([...filterName]);
         }
 
-        // const filtered = projectList.filter(project => project.techUsed.includes(name));
-        // !isChecked ? setFilteredProjects(filtered) : setFilteredProjects(projectList);
+
     }
+    // will update the projects to render as the boxes are checked or unchecked 
+    useEffect(() => {
+        // will return true if the value is included in the array 
+        const includesTech = (arr, values) => values.some(v => arr.includes(v));
+
+        // will return the projects with the checked tech only
+        const filtered = projectList.filter(project => includesTech(project.techUsed, filterName));
+        // setProjectsToRender(filtered);
+        filterName.length > 0 ? setProjectsToRender(filtered) : setProjectsToRender(projectList);
+    }, [filterName])
 
 
 
@@ -45,15 +54,16 @@ function Portfolio() {
                 {allTechArray.map((tech) => {
                     return (
                         <>
-                            <TechCheckbox key={tech} id={tech} name={tech} onClick={handleFilter} onChange={() => { setCheckbox(!isChecked) }} />
+                            <TechCheckbox key={tech} id={tech} name={tech} onClick={handleFilter} onChange={() => { }} />
                         </>
                     )
                 })}
-                {console.log(filterName)}
+                {console.log('filterName', filterName)}
+                {console.log('projectsToRender', projectsToRender)}
             </aside>
             <section className="projects row justify-content-evenly">
                 <h2 className="text-align-left">Group Projects</h2>
-                {filteredProjects.map((project) => <Project key={project.id} {...project} />)}
+                {projectsToRender.map((project) => <Project key={project.id} {...project} />)}
             </section>
         </div>
     );
