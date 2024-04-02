@@ -2,208 +2,232 @@
 
 /* Root styles including color pallets are here */
 :root {
-    --background-color: #9a275a;
-    --text-color: #e2c6c2;
-    --border-color: #cb958e;
-    --selection-color: #e2bfba;
-  }
-  
-  ::selection {
-    background-color: var(--selection-color);
-    color: var(--background-color);
-  }
-  
-  * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-  
-  html {
-    font-size: 62.5%;
-  }
-  
-  body {
-    font-family: -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial,
-      sans-serif;
-    font-size: 1.75rem;
-    line-height: 1.5;
-    color: var(--text-color);
-    background: var(--background-color);
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-    padding: 0.5rem;
-  }
-  
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    margin-bottom: 0.625rem;
-    margin-left: 0.5rem;
-    color: var(--text-color);
-    font-weight: 250;
-    line-height: 1.1;
-  }
-  
-  h1 {
-    font-size: 4rem;
-    margin-bottom: 0.25rem;
-  }
-  
-  h2 {
-    font-size: 3.5rem;
-  }
-  
-  h3 {
-    font-size: 3rem;
-  }
-  
-  h4 {
-    font-size: 2.5rem;
-  }
-  
-  h5 {
-    font-size: 2rem;
-  }
-  
-  h6 {
-    font-size: 1.5rem;
-  }
-  
-  p {
-    font-weight: 150;
-  }
-  
-  /* Header Styles */
-  
-  header {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    padding: 1%;
-  }
-  
-  .nav {
-    display: flex;
-    min-width: 450px;
-    width: 100%;
-    justify-content: space-evenly;
-    list-style-type: none;
-  }
-  
-  .nav-item {
-    text-decoration: none;
-    font-weight: bolder;
-    color: var(--text-color);
-  }
+  --background-color: #9a275a;
+  --text-color: #e2c6c2;
+  --border-color: #cb958e;
+  --selection-color: #e2bfba;
+}
 
-  .nav-item a {
-    text-decoration: none;
-    color: var(--text-color);
-    ;
-  }
-  
-  /* Font color changes when user hovers over any of the nav elements */
-  .nav-item a:hover {
-    color: #806666;
-  }
-  
-  /* Main Styles */
-  
-  main {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-  }
-  
-  /* about me styles */
-  
-  #about-me {
-    text-align: justify;
-  }
-  
-  /* portfolio section styles */
-  
+::selection {
+  background-color: var(--selection-color);
+  color: var(--background-color);
+}
 
-  .project {
-    border: solid 5px var(--border-color);
-    position: relative;
-    padding: 0%;
-  }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-  .project span p {
-    font-size: smaller;
-  }
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial,
+    sans-serif;
+  font-size: 1.75rem;
+  line-height: 1.5;
+  color: var(--text-color);
+  background: var(--background-color);
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  padding: 0.5rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0.625rem;
+  margin-left: 0.5rem;
+  color: var(--text-color);
+  font-weight: 250;
+  line-height: 1.1;
+}
+
+h1 {
+  font-size: 4rem;
+  margin-bottom: 0.25rem;
+}
+
+h2 {
+  font-size: 3.5rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+h4 {
+  font-size: 2.5rem;
+}
+
+h5 {
+  font-size: 2rem;
+}
+
+h6 {
+  font-size: 1.5rem;
+}
+
+p {
+  font-weight: 150;
+}
+
+/* Header Styles */
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 1%;
+}
+
+.nav {
+  display: flex;
+  min-width: 450px;
+  width: 100%;
+  justify-content: space-evenly;
+  list-style-type: none;
+}
+
+.nav-item {
+  text-decoration: none;
+  font-weight: bolder;
+  color: var(--text-color);
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+/* Font color changes when user hovers over any of the nav elements */
+.nav-item a:hover {
+  color: #806666;
+}
+
+/* Main Styles */
+
+main {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* about me styles */
+
+#about-me {
+  text-align: justify;
+}
+
+/* portfolio section styles */
+
+.project {
+  border: solid 5px var(--border-color);
+  position: relative;
+  padding: 0%;
+}
+
+.project span p {
+  font-size: smaller;
+}
 
 .project::before {
-    background-color: rgba(255, 255, 255, 0.677);
-    content:normal;
-    display: block;
-    height: 100%;
-    position: absolute;
-    width: 100%;
-  } 
-  /* Footer styles. it is the same colour as the header and always at the bottom of the page */
-  
-  footer {
-    text-align: center;
-    margin-top: auto;
-    font-size:xx-large;
-  }
-  
-  /* Styles for bigger screens: */
-  
-  @media screen and (min-width: 768px) {
-    h2 {
-      width: 20%;
-      text-align: right;
-      padding-right: 2%;
-    }
-  
-    header {
-      justify-content: space-between;
-      align-items: center;
-    }
-  
-    .nav {
-      width: auto;
-    }
-  
-    main {
-      padding: 0 10%;
-    }
-  
-    main section {
-      margin-top: 5%;
-      margin-bottom: 5%;
-    }
-  
-    #about-me {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: flex-start;
-    }
+  background-color: rgba(255, 255, 255, 0.677);
+  content: normal;
+  display: block;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
 
-    #about-me div {
-      display: flex;
-      padding: 1em;
-    }
+/* Checkboxes styling */
 
-  
-  
+#filter-projects {
+  background-color: var(--border-color);
+  padding: 1rem;
+  border-radius: 15px;
+  color: var(--background-color);
+}
+
+#filter-projects div h5 {
+  color: var(--background-color);
+}
+
+#checkboxes-filter {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.filter-checkbox-container {
+  /* display: flex; */
+  width: fit-content;
+  min-width: 70px;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+.filter-checkbox-container input {
+  margin-right: 0.5rem;
+}
+
+/* Footer styles. it is the same colour as the header and always at the bottom of the page */
+
+footer {
+  text-align: center;
+  margin-top: auto;
+  font-size: xx-large;
+}
+
+/* Styles for bigger screens: */
+
+@media screen and (min-width: 768px) {
+  h2 {
+    width: 20%;
+    text-align: right;
+    padding-right: 2%;
   }
-  
-  @media screen and (min-width: 1022px) {
-    /* for screens 1022px and larger the projects won't take 100% of the section  */
-        /* for the project font size */
-        .project span p {
-          font-size: normal;
-        }
-  
+
+  header {
+    justify-content: space-between;
+    align-items: center;
   }
-  
+
+  .nav {
+    width: auto;
+  }
+
+  main {
+    padding: 0 10%;
+  }
+
+  main section {
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+
+  #about-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  #about-me div {
+    display: flex;
+    padding: 1em;
+  }
+}
+
+@media screen and (min-width: 1022px) {
+  /* for screens 1022px and larger the projects won't take 100% of the section  */
+  /* for the project font size */
+  .project span p {
+    font-size: normal;
+  }
+}

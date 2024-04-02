@@ -38,7 +38,7 @@ function Portfolio() {
 
         // will return the projects with the checked tech only
         const filtered = projectList.filter(project => includesTech(project.techUsed, filterName));
-        // setProjectsToRender(filtered);
+        // if no filters are checked it will render all projects 
         filterName.length > 0 ? setProjectsToRender(filtered) : setProjectsToRender(projectList);
     }, [filterName])
 
@@ -47,22 +47,21 @@ function Portfolio() {
     return (
         <div id='portfolio'>
             <h1>Portfolio</h1>
-            <aside>
+            <section id='filter-projects'>
                 <div>
-                    <h5>Filter by tech used</h5>
+                    <h5 style={{ fontWeight: 'bold' }}>Filter Projects by tech used</h5>
                 </div>
-                {allTechArray.map((tech) => {
-                    return (
-                        <>
-                            <TechCheckbox key={tech} id={tech} name={tech} onClick={handleFilter} onChange={() => { }} />
-                        </>
-                    )
-                })}
-                {console.log('filterName', filterName)}
-                {console.log('projectsToRender', projectsToRender)}
-            </aside>
+                <div id='checkboxes-filter'>
+                    {allTechArray.map((tech) => {
+                        return (
+                            <>
+                                <TechCheckbox key={tech} id={tech} name={tech} onClick={handleFilter} />
+                            </>
+                        )
+                    })}
+                </div>
+            </section>
             <section className="projects row justify-content-evenly">
-                <h2 className="text-align-left">Group Projects</h2>
                 {projectsToRender.map((project) => <Project key={project.id} {...project} />)}
             </section>
         </div>
