@@ -54,6 +54,8 @@ export default function Contact() {
             <h1>
                 Contact Me
             </h1>
+            <p style={{marginTop:'1rem'}}> 📱 You can call or text me at 780-909-1339 or <br />
+            📧 email at beatz.bravo@gmail.com or you can use the form below to email me directly</p>
             {messageSent ? <h3>{responseMessage}</h3> :
                 <form className="form" onSubmit={handleFormSubmit}>
                     <div className="form-group my-4 row">
