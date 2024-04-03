@@ -2,6 +2,7 @@ import project1 from './images/place-holder-img.jpg'
 import foodieFinds from './images/Foodie-finds.png'
 import wrapify from './images/wrapify.png'
 import freshFinder from './images/Fresh-finder.png'
+import techBlog from './images/tech-blog.gif'
 
 const projectList = [
     {
@@ -19,7 +20,7 @@ const projectList = [
         title: "Foodie Finds",
         deployed: 'https://restaurant-blog-3f12d3a2bc88.herokuapp.com/',
         link: "https://github.com/nicholascatalano/foodie-finds-app",
-        techUsed: "HTML5, CSS, JavaScript, MySQL, Sequelize",
+        techUsed: "HTML5, CSS, JavaScript, MySQL, Sequelize, Handlebars",
         description: 'Search a database of reviewed restaurants, based on a specific location, type of food, and/or type of restaurant. The user is able to create an account and add their own review'
     },
     {
@@ -34,10 +35,12 @@ const projectList = [
 
     {
         id: 4,
-        image: project1,
-        title: "Place-holder4",
-        link: "github.com/BeaBravo",
-        techUsed: "React, Angular, Materialize, Java"
+        image: techBlog,
+        title: "Tech Blog",
+        deployed: 'https://tech-blog-bb-d749bf016efb.herokuapp.com/',
+        link: "https://github.com/BeaBravo/tech-blog",
+        techUsed: "JavaScript, Handlebars, CSS, Express.js, MySQL, Sequelize, HTML5",
+        description: "Tech blog was created for developers who love to write about tech. Users can publish articles, blog posts, and thoughts and optinions. They can also comment on their fellow developers' posts"
     },
 ]
 
