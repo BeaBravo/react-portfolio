@@ -5,6 +5,7 @@ import freshFinder from './images/Fresh-finder.png'
 import techBlog from './images/tech-blog.gif'
 import bookSearch from './images/book-search-engine.png'
 import socialNetwork from './images/social-network.png'
+import employeeTracker from './images/employee-tracker.png'
 
 const projectList = [
     {
@@ -62,6 +63,16 @@ const projectList = [
         techUsed: "Back-end, JavaScript, MongoDB, Mongoose, RESTful API, Express.js",
         description: "This was created to build an API for a social network web app, where users can share their thoughts, react to friend's thoughts, and add more friends. This application is not deployed, a demo video can be found in the README file"
     },
+    {
+        id: 7,
+        image: employeeTracker,
+        title: "Employee Tracker",
+        deployed: 'https://drive.google.com/file/d/17RuJAHiZMxxITd6Qbg9veeJ8emBV2Z0-/view',
+        link: "https://github.com/BeaBravo/employee-tracker",
+        techUsed: "JavaScript, MySQL, node.js",
+        description: "This command-line application was built to manage a company's employee database. You can view all employees, roles, and departments. You can add an employee, role, and/or department. All these actions are performed using MySQL queries. This application is not deployed, a demo video can be found in the README file"
+    },
+    
 ]
 
 export default projectList
