@@ -3,6 +3,7 @@ import foodieFinds from './images/Foodie-finds.png'
 import wrapify from './images/wrapify.png'
 import freshFinder from './images/Fresh-finder.png'
 import techBlog from './images/tech-blog.gif'
+import bookSearch from './images/book-search-engine.png'
 
 const projectList = [
     {
@@ -20,7 +21,7 @@ const projectList = [
         title: "Foodie Finds",
         deployed: 'https://restaurant-blog-3f12d3a2bc88.herokuapp.com/',
         link: "https://github.com/nicholascatalano/foodie-finds-app",
-        techUsed: "HTML5, CSS, JavaScript, MySQL, Sequelize, Handlebars",
+        techUsed: "HTML5, CSS, JavaScript, MySQL, Sequelize, Handlebars, RESTful API",
         description: 'Search a database of reviewed restaurants, based on a specific location, type of food, and/or type of restaurant. The user is able to create an account and add their own review'
     },
     {
@@ -39,8 +40,17 @@ const projectList = [
         title: "Tech Blog",
         deployed: 'https://tech-blog-bb-d749bf016efb.herokuapp.com/',
         link: "https://github.com/BeaBravo/tech-blog",
-        techUsed: "JavaScript, Handlebars, CSS, Express.js, MySQL, Sequelize, HTML5",
+        techUsed: "JavaScript, Handlebars, CSS, Express.js, MySQL, Sequelize, HTML5, RESTful API",
         description: "Tech blog was created for developers who love to write about tech. Users can publish articles, blog posts, and thoughts and optinions. They can also comment on their fellow developers' posts"
+    },
+    {
+        id: 5,
+        image: bookSearch,
+        title: "Book Search Engine",
+        deployed: 'https://book-search-engine-r50l.onrender.com/',
+        link: "https://github.com/BeaBravo/book-search-engine",
+        techUsed: "JavaScript, GraphQL, Apollo, Express.js, MongoDB, Mongoose, HTML5",
+        description: "This repo was created to take a functioning Google Books API search engine built with a RESTful API, and refactor it to be a GraphQL API built with Apollo server and client"
     },
 ]
 
